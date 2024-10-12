@@ -1,6 +1,6 @@
 /* global chrome */
 
-const messagesURL = 'https://453974f5-a53b-4777-b592-93e73524dd86.mock.pstmn.io/messages';
+const messagesURL = 'https://992da397-8529-479c-9972-0775955d2683.mock.pstmn.io';
 
 chrome.runtime.onInstalled.addListener(() => {
     chrome.storage.local.set({ messages: [], seenMessages: {} });
@@ -9,7 +9,7 @@ chrome.runtime.onInstalled.addListener(() => {
 chrome.alarms.create('fetchMessages', { periodInMinutes: 0.1 });
 
 chrome.alarms.onAlarm.addListener(() => {
-  fetch(messagesURL)
+  fetch(`${messagesURL}/messages`)
     .then(response => response.json())
     .then(data => {
       chrome.storage.local.get('seenMessages', (res) => {

@@ -16,8 +16,12 @@ This Chrome extension enables organization-wide communication by displaying mess
 * Create a free [Postman](http://www.postman.com/ "Postman") account
 * Import `Fetch Admin Messages.postman_collection.json` into a Postman collection
 * Create a mock server based on this collection following these steps: [Link](https://learning.postman.com/docs/designing-and-developing-your-api/mocking-data/setting-up-mock/#create-a-mock-server-from-a-collection "Create a mock server")
+* After mock is created, a url will be given - use it in background.js as `messagesURL`
 
 
 #### App
-* Clone this repository and run `npm run build`
+* Clone this repository
+* Set `messagesURL` as per the mock we created using postman mock server
+* run `npm install`
+* run `npm run build`
 * While loading the unpacked extension use `build` folder - [Link](https://knowledge.workspace.google.com/kb/load-unpacked-extensions-000005962)
