@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Admin Messages",
+    "description": "Broadcasting Org wide messages from Admin",
+    "version": "1.0.0",
+    "permissions": ["storage", "alarms"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+      "default_title": "Organisation Notifications",
+      "default_popup": "index.html"
+    },
+    "icons": {
+        "16": "icon.png",
+        "32": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+  }
