@@ -25,3 +25,6 @@ This Chrome extension enables organization-wide communication by displaying mess
 * run `npm install`
 * run `npm run build`
 * While loading the unpacked extension use `build` folder - [Link](https://knowledge.workspace.google.com/kb/load-unpacked-extensions-000005962)
+
+  
+![image](https://github.com/user-attachments/assets/f2162e35-48ed-4097-814a-dd00d7395459)
